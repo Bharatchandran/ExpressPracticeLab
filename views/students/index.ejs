@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJS students practice</title>
-</head>
+   <%- include('../partial-views/header') %>
 <body>
     <h1>Student Details</h1>
 <table>
@@ -12,16 +8,12 @@
         <th>Name</th>
         <th>Height</th>
     </tr>
-
-  
         <% students.forEach((student) => { %>
             <tr>
                 <td><%= student.name %></td>
                <td><%= student.height %></td>
-
             </tr>
         <% }) %>
 </table>
-    
 </body>
 </html>
